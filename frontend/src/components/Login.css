@@ -1,0 +1,27 @@
+/* Login.css */
+@keyframes dvd-bounce {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(calc(100vw - 100px), 0);
+  } /* Adjust for image size */
+  50% {
+    transform: translate(calc(100vw - 100px), calc(100vh - 100px));
+  }
+  75% {
+    transform: translate(0, calc(100vh - 100px));
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.panda-bounce {
+  animation: dvd-bounce 5s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px; /* Ensure the width matches the calculation above */
+  height: 100px;
+}

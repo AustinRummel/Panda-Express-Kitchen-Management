@@ -1,0 +1,53 @@
+/* Import the Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@550;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.border-blue {
+    box-shadow: inset 0 0 0 5px blue;
+    border-radius: 0.5rem;
+}
+
+.border-green-blue {
+    box-shadow: inset 0 0 0 5px green, inset 0 0 0 7px white, inset 0 0 0 12px blue;
+    border-radius: 0.5rem;
+}
+
+.border-orange-green-blue {
+    box-shadow: inset 0 0 0 5px orange, inset 0 0 0 7px white, inset 0 0 0 12px green, inset 0 0 0 14px white, inset 0 0 0 19px blue;
+    border-radius: 0.5rem;
+}
+
+.border-gray {
+    box-shadow: inset 0 0 0 0px gray;
+    border-radius: 0.5rem;
+}
+
+.border-orange-green {
+    box-shadow: inset 0 0 0 5px orange, inset 0 0 0 7px white, inset 0 0 0 12px green;
+    border-radius: 0.5rem;
+}
+
+.border-orange-blue {
+    box-shadow: inset 0 0 0 5px orange, inset 0 0 0 7px white, inset 0 0 0 12px blue;
+    border-radius: 0.5rem;
+}
+
+.border-green {
+    box-shadow: inset 0 0 0 5px green;
+    border-radius: 0.5rem;
+}
+
+button {
+    background: white;
+    border-radius: 0.5rem;
+    font-size: 1.125rem; /* text-lg */
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}

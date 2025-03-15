@@ -1,0 +1,787 @@
+.menu-board-pricing-container {
+  max-width: 100%;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: rgb(239 68 68);
+  color: rgb(239 68 68);
+}
+
+.menu-board-pricing-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.menu-board-pricing-image {
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 1rem;
+}
+
+.menu-board-pricing-title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 0.025em;
+}
+
+.menu-board-pricing-additional {
+  margin-top: 2rem;
+}
+
+.menu-board-container {
+  max-width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: rgb(239 68 68);
+  border-radius: 1rem;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.menu-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  color: rgb(239 68 68);
+}
+
+.menu-card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  transform: translateY(-0.25rem);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  padding: 1rem;
+  color: rgb(239 68 68);
+  width: 100%;
+  max-width: 350px;
+}
+
+.menu-card.hovered {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-card-image {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  object-fit: contain;
+  max-height: 200px;
+}
+
+.menu-card-content {
+  text-align: center;
+  margin-top: 4px;
+  color: #9c1219;
+}
+
+.menu-card-name {
+  font-size: x-large;
+  font-weight: bold;
+  color: #9c1219;
+  margin: 0;
+}
+
+.menu-card-description {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.menu-card-calories {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.25rem;
+  display: block;
+  font-size: 1em;
+}
+
+.menu-card-price {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.menu-card-split {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.menu-card-half {
+  flex: 1;
+  text-align: center;
+}
+
+.menu-card-half strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.menu-card-half div {
+  margin-bottom: 4px;
+}
+
+/* MenuBoardEntrees.css */
+
+.entrees-menu-board-container {
+  max-width: 100%;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: rgb(239 68 68);
+}
+
+.entrees-menu-board-title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  color: rgb(220 38 38);
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 0.025em;
+}
+
+/* Set up a fixed grid with exactly 7 columns */
+.entrees-menu-cards-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+/* Increase the width and height of each card */
+.entrees-menu-card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  transform: translateY(-0.25rem);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  padding: 1rem;
+  width: 100%;
+}
+
+.entrees-menu-card.hovered {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure images are fully displayed without cropping */
+.entrees-menu-card-image {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+  object-fit: contain;
+  max-height: 200px;
+}
+
+.entrees-menu-card-content {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.entrees-menu-card-name {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: rgb(17 24 39);
+  margin-bottom: 0.5rem;
+}
+
+.entrees-menu-card-calories {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: rgb(55 65 81);
+}
+
+.menu-card.selected {
+  border: 2px solid #4CAF50;
+  background-color: #d4edda;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+.menu-card:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.menu-card {
+  transition: background-color 0.3s, border 0.3s;
+}
+
+.sides-menu-board-container {
+  max-width: 100%;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: rgb(239 68 68);
+}
+
+.sides-menu-board-title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  color: rgb(220 38 38);
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 0.025em;
+}
+
+/* Style for each section (Sides and Drinks) */
+.sides-menu-section {
+  margin-bottom: 3rem;
+}
+
+.sides-menu-section-title {
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+/* Responsive grid layout for menu items */
+.sides-menu-cards-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.sides-menu-card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  transform: translateY(-0.25rem);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  padding: 1rem;
+  width: 100%;
+}
+
+.sides-menu-card.hovered {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sides-menu-card-image {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+  object-fit: contain;
+  max-height: 200px;
+}
+
+.sides-menu-card-content {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.sides-menu-card-name {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: rgb(17 24 39);
+  margin-bottom: 0.5rem;
+}
+
+.sides-menu-card-calories {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: rgb(55 65 81);
+}
+
+.sides-menu-card-price {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: rgb(31 41 55);
+}
+
+.kiosk-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f3f4f6;
+  font-family: "Montserrat", sans-serif;
+}
+
+.sidebar {
+  width: 25%;
+  background-color: #c81d25;
+  color: #ffffff;
+  padding: 2rem 1rem;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  justify-content: space-between;
+}
+
+.sidebar-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.sidebar-list li {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-item {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 2.45rem;
+  font-weight: bold;
+  border-radius: 0.375rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  position: relative;
+}
+
+.sidebar-item:hover, 
+.sidebar-item.active {
+  background-color: #8e1c24;
+  transform: scale(1.05);
+}
+
+.content {
+  width: 75%;
+  padding: 2rem;
+  overflow-y: auto;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.05);
+
+  padding-top: 90px;
+}
+
+.content-section {
+  margin-bottom: 2rem;
+  margin-top: 3.5rem;
+}
+
+.content-section-checkout {
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+}
+
+.content-section p, .content-section-checkout p {
+  font-size: 1.125rem;
+  color: #555555;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  transition: all 0.3s ease;
+}
+
+.next-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures space between the title, button, and Google translate element */
+  width: calc(100% - 25%); /* Full width minus the sidebar width (25%) */
+  padding: 0px 24px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  position: fixed; /* Keeps it fixed at the top */
+  top: 0; /* Aligns it to the top of the screen */
+  z-index: 10; /* Makes sure it stays above other content */
+  padding-bottom: 15px;
+  padding-top: 40px;
+}
+
+.section-title {
+  font-size: 30px;
+  margin: 0;
+  white-space: nowrap;
+  position: relative;
+  flex-shrink: 0; /* Prevent the title from shrinking */
+  padding-top: 30px;
+
+  font-weight: 600;
+  color: #333333;
+  border-bottom: 2px solid #c81d25;
+  margin-top: 20px;
+}
+
+.next-button {
+  font-size: 25px !important;
+  font-weight: bold; /* Bold text */
+  cursor: pointer;
+  background-color: #28a745; /* Same green background */
+  border: none;
+  border-radius: 6px; /* Slightly larger border radius for aesthetic */
+  max-width: 300px; /* Increased max width */
+  width: auto;
+  text-align: center;
+  transition: transform 0.2s; /* Smooth effect on hover */
+  margin: 0; /* Remove extra margins */
+  flex-grow: 1; /* Ensures the button takes available space and stays centered */
+  text-align: center;
+
+  margin-top: -20px;
+}
+
+.next-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.google-translate-element {
+  background-color: #c81d25;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); 
+  width: fit-content;
+  flex-shrink: 0;
+  margin-top: -25px;
+  padding: 8px;
+  transform: scale(1.2);
+  position: fixed;
+  bottom: 125px;
+  left: 15px;
+}
+
+/* Container styling for the sidebar to ensure it's not overlapping */
+.sidebar {
+  position: relative; /* Ensure sidebar stays in its normal flow */
+  z-index: 500; /* Sidebar has a lower z-index than the fixed container */
+  width: 25%;
+}
+
+.content-container {
+  padding-top: 80px; /* Adjust this value based on the height of the fixed container */
+}
+
+/* Adjustments for the content section if needed */
+.content-section, .content-section-checkout {
+  padding: 20px;
+}
+
+/* Additional styling for widgets or other elements */
+.widgets-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-start; /* Align items to the start horizontally */
+  gap: 16px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 9999;
+}
+
+.menu-card-image {
+  transition: transform 0.2s;
+}
+
+.menu-card:hover .menu-card-image {
+  transform: scale(1.05);
+}
+
+.selection-count {
+  position: absolute;
+      top: 14px;
+      right: 10px;
+      background-color: #e60012;
+      color: white;
+      border-radius: 16px;
+      min-width: 60px;
+        height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 0 12px;
+}
+
+.menu-card.selected {
+  border: 2px solid #2ecc71;
+  background-color: rgba(46, 204, 113, 0.1);
+}
+
+.checkout-content {
+  padding: 20px;
+}
+
+/* Style the counter badge */
+.counter-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #28a745;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 4px;
+  min-width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: scale(1); /* Default size */
+  transition: transform 0.2s ease; /* Smooth animation */
+}
+
+/* Enlarging animation */
+.counter-badge.enlarge {
+  transform: scale(1.3); /* Temporarily enlarges the circle */
+}
+
+/* Sidebar item to ensure relative positioning for badge placement */
+.sidebar-item {
+  position: relative;
+  padding-right: 35px; /* Add extra space to avoid overlapping */
+}
+
+.widgets-container {
+  display: flex;
+  align-items: right; /* Align items vertically */
+  gap: 16px; /* Space between the weather and translate widgets */
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 9999;
+}
+
+/* Force inline layout */
+.goog-te-gadget {
+  display: flex !important;
+  align-items: center !important;
+  white-space: nowrap !important;
+}
+
+/* Hide the "Select Language" text */
+.goog-te-gadget > span {
+  display: none !important;
+}
+
+/* Style the select dropdown */
+.goog-te-combo {
+  margin: 0 !important;
+  padding: 4px 8px !important;
+  border: none !important;
+  border-radius: 4px !important;
+  font-size: 14px !important;
+  height: 30px !important;
+  min-width: 150px !important;
+}
+
+/* Keep only essential Google branding */
+.goog-te-gadget div:first-child {
+  display: inline-block !important;
+  margin-right: 8px !important;
+}
+
+/* Reset other Google elements */
+#google_translate_element span {
+  display: none !important;
+}
+
+#google_translate_element font {
+  display: none !important;
+}
+
+/* Hide the banner */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+/* Update accessibility toggle styles */
+.accessibility-toggle-container {
+  position: fixed;
+  bottom: 120px;
+  left: 165px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 1001;
+  background-color: #c81d25;
+}
+
+.switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100px; /* Increased width to accommodate toggle */
+  height: 50px;
+  background: #c81d25;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  padding: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.switch.active {
+  background: #28a745;
+}
+
+.switch-thumb {
+  position: absolute;
+  left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  font-size: 24px;
+}
+
+.switch.active .switch-thumb {
+  transform: translateX(50px);
+}
+
+.sidebar-logos img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  margin: 5px 0;
+}
+
+
+/* Update sidebar list to use flexbox for better spacing */
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+/* Add a container for the bottom elements */
+.sidebar-bottom {
+  margin-top: auto;
+  width: 100%;
+}
+
+/* Zoomed Text Styles */
+.zoomed {
+  font-size: 1.2em; /* Increases base font size by 20% */
+}
+
+.zoomed .content {
+  font-size: 1.2em;
+}
+
+.zoomed .section-title {
+  font-size: 2em;
+}
+
+.zoomed .menu-card-name {
+  font-size: 1.5em;
+}
+
+.zoomed .menu-card-description,
+.zoomed .menu-card-calories,
+.zoomed .menu-card-price {
+  font-size: 1.2em;
+}
+
+.zoomed .accessibility-label,
+.zoomed .zoom-label {
+  font-size: 1em;
+}
+
+.zoomed .next-button {
+  font-size: 2em !important;
+}
+
+.zoom-toggle-container {
+  position: fixed;
+  bottom: 127px;
+  left: 100px;
+}
+
+.zoom-button {
+  background-color: #c81d25;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  padding: 8px;
+  transform: scale(1.2);
+}
+
+.accessibility-zoom-toggle-container {
+  margin-top: auto;
+  padding: 1rem;
+}
+

@@ -1,0 +1,44 @@
+/* MenuBoardEntrees.css */
+
+.entrees-menu-board-container {
+  @apply max-w-full min-h-screen mx-auto px-4 py-8 bg-red-600;
+}
+
+.entrees-menu-board-title {
+  @apply text-3xl font-bold text-red-600 mb-8 text-center tracking-wide;
+}
+
+/* Set up a fixed grid with exactly 7 columns */
+.entrees-menu-cards-container {
+  @apply grid gap-6;
+  grid-template-columns: repeat(7, 1fr); /* Fixed 7 columns */
+}
+
+/* Increase the width and height of each card */
+.entrees-menu-card {
+  @apply bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 ease-in-out p-4;
+  width: 100%; /* Ensures cards take up the full space in each grid cell */
+}
+
+.entrees-menu-card.hovered {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure images are fully displayed without cropping */
+.entrees-menu-card-image {
+  @apply w-full h-auto rounded-t-xl object-contain;
+  max-height: 200px; /* Limit the height to prevent oversized images */
+}
+
+.entrees-menu-card-content {
+  @apply text-center mt-4;
+}
+
+.entrees-menu-card-name {
+  @apply text-lg font-semibold text-gray-900 mb-2;
+}
+
+.entrees-menu-card-calories {
+  @apply text-base font-semibold text-gray-700;
+}

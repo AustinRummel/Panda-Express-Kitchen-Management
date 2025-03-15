@@ -1,0 +1,266 @@
+.no-orders {
+    @apply max-w-full min-h-screen mx-auto p-4 bg-red-500 flex justify-center items-center;
+}
+
+.no-orders-text {
+    @apply text-3xl font-bold text-white mb-8 text-center tracking-wide font-sans;
+}
+
+.kitchen-container {
+    @apply max-w-full min-h-screen mx-0 p-8 bg-red-500 justify-center items-center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.orders-left {
+    @apply absolute top-4 right-4 text-xl font-semibold text-white tracking-wide;
+}
+
+.orders-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 16px;
+    width: 95%;
+    gap: 4;
+    height: calc(2 * 43vh + 16px); /* 2 rows of cards plus the gap */
+    overflow: hidden;
+}
+
+.order-card {
+    @apply bg-white rounded-lg shadow-lg transition-all duration-300 ease-in-out p-4 relative;
+    height: 43vh;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    max-width: 40vw;
+    column-count: 2;
+    column-gap: 8px;
+    column-fill: auto; /* Ensure all of the left column is filled before moving to the next column */
+}
+
+.order-card::-webkit-scrollbar {
+    width: 12px;
+}
+
+.order-card::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.order-card::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.order-card::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.order-timer {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+
+.flashing {
+    animation: flash 0.75s infinite;
+}
+
+@keyframes flash {
+    0%, 100% { background-color: rgba(255, 255, 255, 0.8); }
+    50% { background-color: #f56565; } /* red-500 */
+}
+
+.wide-card {
+    grid-column: span 2;
+    max-width: 50vw; /* Increase width by 10% */
+}
+
+.next-order {
+    opacity: 1;
+}
+
+.push-back-button {
+    @apply absolute top-3 right-3 text-blue-500 font-medium text-sm uppercase tracking-wide transition-colors duration-200;
+}
+
+.push-back-button:hover {
+    @apply text-blue-600;
+}
+
+.order-title {
+    @apply text-lg font-bold text-gray-900 mb-6 tracking-tight;
+    @apply py-2.5 px-6 rounded-md text-white font-medium transition-opacity duration-200 bg-red-500;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
+
+.order-title:hover {
+    @apply bg-red-700;
+}
+
+.completed {
+    @apply line-through;
+}
+
+.order-items {
+    @apply mb-4;
+}
+
+.items-list {
+    @apply mb-4;
+}
+
+.items-title {
+    @apply text-xl font-semibold text-gray-900 mb-3;
+}
+
+.items-ul {
+    @apply list-none p-0 m-0;
+}
+
+.item {
+    @apply flex items-center text-gray-700;
+    break-inside: avoid-column;
+}
+
+.item-name {
+    @apply font-medium;
+}
+
+.item-separator {
+    @apply mx-2 text-gray-400;
+}
+
+.item-quantity {
+    @apply text-blue-500 font-bold;
+}
+
+.no-items {
+    @apply text-gray-500 italic;
+}
+
+.complete-button {
+    @apply py-2.5 px-6 rounded-md text-white font-medium transition-opacity duration-200 bg-red-500;
+}
+
+.complete-button:hover {
+    @apply bg-red-700;
+}
+
+.meal-size {
+    @apply font-bold text-xl text-gray-900;
+}
+
+.meal-items {
+    @apply pl-4;
+}
+
+.product-dropdown {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+.product-dropdown select {
+    @apply py-2 px-4 rounded-md text-gray-700 bg-white border border-gray-300;
+}
+
+.product-popup-button {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+}
+
+.product-popup-button button {
+    @apply py-2 px-4 rounded-md text-white bg-red-500;
+    font-weight: bold; /* Make the text bold */
+}
+
+.product-popup-button button:hover {
+    @apply bg-red-700;
+}
+
+.product-popup {
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 400px; /* Increase width */
+    max-height: 600px; /* Increase height to twice the original */
+    overflow-y: auto;
+}
+
+.popup-content {
+    padding: 16px;
+}
+
+.popup-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.popup-content li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.product-button {
+    @apply py-2 px-4 rounded-md text-white bg-red-500 w-full text-left;
+}
+
+.product-button:hover {
+    @apply bg-red-700;
+}
+
+.close-popup {
+    display: none; /* Hide the close button */
+}
+
+.selected-products-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    margin-left: 69px;
+}
+
+.selected-product-button {
+    @apply py-2 px-4 rounded-md text-black bg-white border border-gray-300;
+}
+
+.selected-product-button:hover {
+    @apply bg-gray-200;
+}
+
+.highlighted {
+    border: 2px solid green;
+    box-shadow: inset 0 0 0 5px green;
+}
+
+.clicked {
+    @apply bg-red-700;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+
+.popup-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Adjust columns to fit buttons */
+    gap: 8px;
+}

@@ -1,0 +1,123 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem; /* Increased padding for a larger overlay */
+  }
+  
+  .modal-card {
+    width: 100%;
+    max-width: 35rem; /* Increased max-width for a bigger dialog box */
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 
+                0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    animation: modalIn 0.3s ease-out;
+    padding: 2rem; /* Added padding for more spacious content */
+  }
+  
+  .modal-header {
+    padding: 2rem 2rem 1.5rem 2rem; /* Increased padding */
+  }
+  
+  .modal-title {
+    font-size: 2rem; /* Increased font size */
+    font-weight: 700;
+    text-align: center;
+    color: #111827;
+  }
+  
+  .modal-content {
+    padding: 0 2rem 2rem 2rem; /* Increased padding */
+  }
+  
+  .modal-description {
+    text-align: center;
+    margin-bottom: 2rem; /* Increased margin */
+    color: #374151;
+    font-size: 1.25rem; /* Increased font size */
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Increased gap between buttons */
+    margin-bottom: 1.5rem; /* Increased bottom margin */
+  }
+  
+  .primary-button {
+    padding: 1rem 2.5rem; /* Increased padding for larger buttons */
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem; /* Increased font size */
+    background-color: #10B981;
+    transition: all 0.2s;
+    width: 100%;
+  }
+  
+  .primary-button:hover {
+    background-color: #059669;
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .cancel-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cancel-button {
+    padding: 1rem 2.5rem; /* Increased padding for larger buttons */
+    border-radius: 0.5rem;
+    color: #374151;
+    font-weight: 600;
+    font-size: 1.25rem; /* Increased font size */
+    background-color: #E5E7EB;
+    transition: background-color 0.2s;
+    width: 100%;
+    margin-top: 1rem; /* Added margin to separate from other buttons */
+  }
+  
+  .cancel-button:hover {
+    background-color: #D1D5DB;
+  }
+  
+  @media (min-width: 640px) {
+    .button-container {
+      flex-direction: column; /* Ensure buttons stack vertically on larger screens */
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    
+    .primary-button {
+      width: auto;
+    }
+    
+    .cancel-button {
+      width: auto;
+      margin-top: 1.5rem; /* Increased margin for better spacing */
+    }
+  }
+  
+  @keyframes modalIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .content {
+    /* Add any specific styling for the main content area */
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+  }
